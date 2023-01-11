@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active {
+    @apply bg-[#12171d];
+}
+
+@layer utilities {
+    .scrollbar-hidden {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
+    .messagebox-right {
+        position: absolute;
+        top: 0px;
+        right: -8px;
+        height: 16px;
+        width: 16px;
+        background: linear-gradient(135deg, rgb(14 165 233) 0%, rgb(14 165 233) 50%, transparent 50%, transparent);
+    }
+    .messagebox-left {
+        position: absolute;
+        top: 0px;
+        left: -8px;
+        height: 16px;
+        width: 16px;
+        background: linear-gradient(225deg, #fff 0%, #fff 50%, transparent 50%, transparent);
+    }
+}
